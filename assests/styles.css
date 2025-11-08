@@ -1,0 +1,756 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 100px;
+    margin-bottom: 70px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.header-navbar {
+    display: flex;
+    font-size: 2.0rem;
+    font-weight: regular;
+    align-items: center;
+}
+
+.header-navbar ul {
+    display: flex;
+    gap: 40px;
+}
+
+.header-navbar li {
+    cursor: pointer;
+    padding: 7px 14px;
+    border-radius: 7px;
+}
+
+.header-navbar li:hover {
+    color: var(--black-color);
+    background-color: var(--primary-color);
+}
+
+.header--request {
+    border: #191A23 solid 1px;
+    border-radius: 14px;
+    padding: 20px 35px;
+    background-color: #ffff;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.header--request:hover {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+}
+
+.body--container {
+    
+}
+
+.body--landing-page {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    padding: 0 100px;
+}
+
+.body--landing-page--infos {
+    width: 531px;
+}
+
+.body--landing-page--infos-title {
+    line-height: 6.4rem;
+    margin-bottom: 35px;
+}
+
+.body--landing-page--infos-content {
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+
+.body--landing-page--infos-booking {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 20px 35px;
+    border-radius: 14px;
+    cursor: pointer;
+
+    /* Thêm transition để hiệu ứng mượt */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.body--landing-page--infos-booking:hover {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+
+    transform: translateY(-4px); /* Nổi lên */
+    box-shadow: 0 5px 0 rgba(25, 26, 35, 1); /* Bóng đổ dưới thẻ */
+}
+
+.body--landing-page--logotypes {
+    position: absolute;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+}
+
+.body--landing-page--logotypes img {
+    display: inline-block;
+    margin-right: 140px;
+}
+
+.logotypes-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 80px;
+}
+
+.body--serivce {
+    margin-top: 140px;
+    padding: 0 100px;
+}
+
+.body--service-header {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.body--service-header-title {
+    display: inline-block;
+    width: fit-content;
+    height: 51px;
+    line-height: 51px;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    padding: 0 7px;
+}
+
+.body--service-header-content {
+    width: 580px;
+    line-height: 23px;
+}
+
+.body--service-content ul {
+    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.service--content-card {
+    display: flex;
+    width: 550px;
+    height: 310px;
+    padding: 50px;
+    background-color: #F3F3F3;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 45px;
+    border: var(--black-color) solid 1px;
+    cursor: pointer;
+
+    /* Thêm transition để hiệu ứng mượt */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service--content-card:hover {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    transform: translateY(-4px); /* Nổi lên */
+    box-shadow: 0 5px 0 rgba(25, 26, 35, 1); /* Bóng đổ dưới thẻ */
+}
+
+.service--content-card:hover .service--content-card--title {
+    background-color: #F3F3F3;
+}
+
+.service--content-card--infos {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.service--content-card--title {
+    display: inline-block;
+    padding: 0 7px;
+    line-height: 38px;
+    white-space: normal; 
+    background-color: var(--primary-color);
+    border-radius: 7px;
+}
+
+.service--content-card--infos {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service--content-card--nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.body--service-contact--container {
+    margin-top: 100px;
+    position: relative;
+}
+
+.body--service-contact--container button {
+    width: fit-content;
+}
+
+.service-contact--infos {
+    height: fit-content;
+    background-color: #F3F3F3;
+    padding: 60px;
+    border-radius: 45px;
+    position: relative;
+    z-index: 1;
+}
+
+.service-contact--infos-container {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.service-contact--illustration {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: 2;
+}
+
+.body--caseStudies {
+    padding: 0 100px;
+    margin-top: 140px;
+}
+
+.caseStudies-section {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 70px 60px;
+    border-radius: 45px;
+    margin-bottom: 140px;
+}
+
+.caseStudies-section ul {
+    width: 100%;
+    display: flex;
+    gap: 64px;
+}
+
+.seperate {
+    display: block;
+    width: 1px;
+    content: "";
+    background-color: var(--white-color);
+}
+
+.caseStudies-section--infos {
+
+}
+
+.caseStudies-section--infos-nav {
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+    color: var(--primary-color);
+    cursor: pointer;
+    position: relative;
+}
+
+.caseStudies-section--infos-nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.4s ease;
+}
+
+.caseStudies-section--infos-nav:hover::after {
+    width: 100%;
+}
+
+.body--WorkingProcess {
+    padding: 0 100px;
+}
+
+.workingProcess--card ul {
+    display: grid;
+    gap: 30px;
+}
+
+.workingProcess--card-contain {
+    background-color: #F3F3F3;
+    border-radius: 45px;
+    padding: 41px 60px;
+    box-shadow: 0 5px 0 rgba(25, 26, 35, 1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.6s ease;
+}
+
+.workingProcess--card--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: margin-bottom 0.5s ease;
+}
+
+.workingProcess--card-content {
+    max-height: 0;         /* Đóng mặc định */
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+}
+
+.workingProcess--card--header-title {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.workingProcess--card-seperate {
+    width: 100%;
+    height: 0;              /* Ban đầu 0 */
+    margin-bottom: 0;       /* Không có khoảng cách khi ẩn */
+    opacity: 0;
+    background-color: var(--black-color);
+    overflow: hidden;       /* Ẩn phần đường kẻ khi height = 0 */
+    transition: height 0.5s ease, margin-bottom 0.5s ease, opacity 0.5s ease;
+}
+
+/* Khi “mở” (có class .active) */
+.workingProcess--card-contain.active {
+    background-color: var(--primary-color);
+}
+
+.workingProcess--card-contain.active .workingProcess--card--header {
+    margin-bottom: 30px;
+}
+
+/* Khi thẻ .workingProcess--card-contain có class .active -> hiển thị */
+.workingProcess--card-contain.active .workingProcess--card-seperate {
+    height: 1px;            /* Hiển thị đường kẻ */
+    margin-bottom: 30px;    /* Tạo khoảng cách */
+    opacity: 1;
+}
+
+.workingProcess--card-contain.active .workingProcess--card-content {
+    max-height: 300px;
+    opacity: 1;
+}
+
+
+.body--Team {
+    padding: 0 100px;
+    margin-top: 140px;
+}
+
+.team--card ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.team--card li {
+    width: 387px;
+    height: 331px;
+    border-radius: 45px;
+    box-shadow: 0 5px 0 rgba(25, 26, 35, 1);
+    border: #191A23 solid 1px;
+}
+
+.team-card--contain {
+    width: fit-content;
+    padding: 40px 35px 0;
+}
+
+.team-card--header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.team-card--seperate {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--black-color);
+    margin-bottom: 28px;
+}
+
+.team-card--info {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+
+.body--testimonials {
+    padding: 0 100px;
+    margin-top: 140px;
+}
+
+.testimonials-container {
+    width: 100%;
+    border-radius: 45px;
+    background-color: var(--black-color);
+    padding: 84px 0 68px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: var(--white-color);
+    margin: 40px auto;
+}
+
+/* Phần chứa danh sách testimonial */
+.testimonials--message {
+    width: 100%;
+    overflow: hidden; /* ẩn phần trượt */
+    position: relative;
+}
+
+.testimonials--message ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Mỗi testimonial (mỗi li) */
+.testimonials--message ul li {
+    min-width: 60%; /* Hiển thị 1 slide chiếm full container, hoặc bạn có thể dùng 80%... */
+    box-sizing: border-box;
+    position: relative;
+    display: flex; 
+    flex-direction: column; /* nội dung + polygon + infos xếp dọc */
+    align-items: center;
+    justify-items: center;
+    padding: 30px 0; /* khoảng trống trên/dưới */
+}
+
+.testimonials--message-content {
+    border: 1px solid var(--primary-color); /* màu xanh lá tùy chỉnh */
+    border-radius: 45px;
+    padding: 48px 52px;
+    width: 60%;
+    margin-bottom: 20px; /* để polygon nằm dưới */
+}
+
+.testimonials--message-infos h4 {
+    color: var(--primary-color); /* Nhấn mạnh màu xanh lá */
+}
+
+.testimonials--message-infos {
+    left: -80px;
+    position: relative;
+}
+
+.testimonials--message-content-polygon {
+    width: 0;
+    height: 0;
+    top: -20px; /* trồi lên so với container */
+    right: 200px;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
+    border-top: 32px solid var(--primary-color); /* tạm thời ẩn fill */
+    position: relative;
+}
+
+.testimonials--message-content-polygon::after {
+    content: "";
+    position: absolute;
+    top: -33px; /* ẩn bớt vào trong */
+    left: -32px;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
+    border-top: 32px solid var(--black-color); /* màu nền container */
+}
+
+/* Điều hướng (mũi tên + 5 sao) */
+.testimonials--nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 189px;
+    margin-top: 20px;
+}
+  
+  /* Nút mũi tên trái/phải (chỉ viền xanh, nền trong suốt) */
+.testimonials--nav-left svg path,
+.testimonials--nav-right svg path {
+    fill: var(--primary-color);
+}
+
+.testimonials--nav-left,
+.testimonials--nav-right {
+    cursor: pointer;
+    transition: var(--primary-color) 0.2s ease;
+}
+  
+/* Bao bọc 5 sao ở giữa */
+.testimonials--nav-star--wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.testimonials--nav-star {
+    cursor: pointer;
+    transition: var(--primary-color) 0.2s ease;
+}
+  
+/* Tùy chỉnh icon sao (cũng cho viền xanh nếu muốn, hoặc fill trắng) */
+.testimonials--nav-star--wrapper svg path {
+    fill: #fff; /* hoặc stroke = #3cb878 tuỳ ý */
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.testimonials--nav-star--wrapper svg:hover path {
+    opacity: 1;
+}
+
+.testimonials--nav-star--wrapper .testimonials--nav-star.active path {
+    fill: var(--primary-color);
+}
+  
+/* Trạng thái “mờ” cho mũi tên khi không thể bấm */
+.testimonials--nav-left.disabled,
+.testimonials--nav-right.disabled {
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.body--contact {
+    padding: 0 100px;
+    margin-top: 140px;
+}
+
+.body--contact-container {
+    background-color: var(--third-color);
+    min-height: 300px;
+    border-radius: 45px;
+    padding: 60px 0px 80px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.body--contact-form {
+    position: relative;
+    width: 100%;
+    flex: 1;
+}
+
+.contact--chosing {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+
+.contact--chosing .contact--chosing--item {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.body--contact-field--item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.body--contact-field--item label {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.body--contact-field--item input,
+.body--contact-field--item textarea {
+    padding: 18px 30px;
+    border-radius: 14px;
+    border: var(--black-color) solid 1px;
+    background-color: #ffff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    resize: none;
+}
+
+.body--contact-btn {
+    width: 556px;
+    border-radius: 14px;
+}
+
+.body--contact-btn button:hover {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+
+    transform: translateY(-4px); /* Nổi lên */
+    box-shadow: 0 5px 0 rgba(25, 26, 35, 1); /* Bóng đổ dưới thẻ */
+}
+
+.body--contact-btn button {
+    font-size: 2.0rem;
+    font-weight: 400;
+    width: 100%;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 20px 35px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.body--contact-illustration {
+    overflow: hidden;
+    position: relative;
+}
+
+.body--contact-illustration img {
+    position: relative;  /* Đặt illustration tuyệt đối trong container */
+    top: 0;
+    right: -321px;  /* Đưa illustration sát vào cạnh phải của container */
+}
+
+.footer--container {
+    margin: 140px 100px 0;
+    padding: 55px 60px 50px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+
+.footer--top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 66px;
+}
+
+.footer--top-nav--header {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.footer--top-nav--item ul {
+    display: flex;
+    gap: 40px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.footer--top-nav--item ul li {
+    cursor: pointer;
+}
+
+.footer--top-nav--socials {
+    display: flex;
+    gap: 20px;
+}
+
+.footer--top-nav--socials img {
+    cursor: pointer;
+}
+
+.footer--body-infos--header {
+    display: inline-block;
+    width: fit-content;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    padding: 0 7px;
+    color: var(--black-color);
+    margin-bottom: 27px;
+}
+
+.footer--body-infos--item {
+    margin-bottom: 20px;
+}
+
+.footer--body-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footer--body-subs {
+    background-color: #292A32;
+    padding: 58px 40px;
+    border-radius: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer--body-subs input {
+    width: 285px;
+    padding: 22px 35px;
+    border: #ffff solid 1px;
+    border-radius: 14px;
+    background-color: transparent;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.footer--body-subs input::placeholder {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--white-color);
+    opacity: 1;
+}
+
+.footer--body-subs button {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    padding: 20px 35px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 2.0rem;
+    font-weight: 400;
+}
+
+.footer--body-seperate {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--white-color);
+}
+
+.footer--privacy {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    color: var(--white-color);
+}
+
+.footer--privacy a {
+    text-decoration: underline;
+    cursor: pointer;
+}
