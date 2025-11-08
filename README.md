@@ -1,27 +1,27 @@
 # Positivus - Static Landing Page
 
-## Gioi thieu
-Positivus la giao dien web mot trang cho agency marketing, duoc xay dung bang HTML, CSS va JavaScript thuan. Du an mo phong mot website gioi thieu dich vu voi bo cuc hien dai va co the deploy len bat ky static host nao.
+## Giới thiệu
+Positivus là giao diện web một trang cho agency marketing, được xây dựng bằng HTML, CSS và JavaScript thuần. Dự án mô phỏng một website giới thiệu dịch vụ với bố cục hiện đại và có thể deploy lên bất kỳ static host nào.
 
 ## Diem noi bat
-- Header co dinh voi logo, menu dieu huong va nut `Request a quote`.
-- Hero section kem CTA "Book a consultation" va hinh minh hoa SVG.
-- Marquee logo khach hang chay vo han (dieu khien trong `java.js`).
-- Luoi dich vu cung CTA "Get your free proposal" va illustration rieng.
-- Case Studies trinh bay ket qua thuc te dang the ngang.
-- Accordion Our Working Process 6 buoc voi icon doi trang thai khi mo hoac dong.
-- Team cards hien thi avatar SVG, chuc danh va lien ket LinkedIn.
-- Testimonials slider ho tro nut dieu huong, cuon chuot va chi bao trang thai bang sao (xu ly trong `java.js`).
-- Form Contact co tuy chon "Say Hi" hoac "Get a Quote", truong ten/email/message va anh minh hoa.
-- Footer cung cap thong tin lien he, form dang ky nhan tin va social icons.
+- Header cố định với logo, menu điều hướng và nút Request a quote.
+- Hero section kèm CTA "Book a consultation" và hình minh họa SVG.
+- Marquee logo khách hàng chạy vô hạn (điều khiển trong `java.js`).
+- Lưới dịch vụ cùng CTA "Get your free proposal" và illustration riêng.
+- Case Studies trình bày kết quả thực tế dạng thẻ ngang.
+- Accordion Our Working Process 6 bước với icon đổi trạng thái khi mở hoặc đóng.
+- Team cards hiển thị avatar SVG, chức danh và liên kết LinkedIn.
+- Testimonials slider hỗ trợ nút điều hướng, cuộn chuột và chỉ báo trạng thái bằng sao (xử lý trong `java.js`).
+- Form Contact có tùy chọn "Say Hi" hoặc "Get a Quote", trường tên/email/message và ảnh minh họa.
+- Footer cung cấp thông tin liên hệ, form đăng ký nhận tin và social icons.
 
-## Cong nghe & tai nguyen
+## Công nghệ & tài nguyên
 - HTML5 (`src/index.html`).
-- CSS thuan trong `assests/base.css` va `assests/styles.css`.
-- Vanilla JavaScript (`src/java.js`) de xu ly marquee, accordion va carousel.
-- Tai nguyen hinh anh SVG/PNG nam trong `assests/img/`.
+- CSS thuần trong `assests/base.css` và `assests/styles.css`.
+- Vanilla JavaScript (`src/java.js`) để xử lý marquee, accordion và carousel.
+- Tài nguyên hình ảnh SVG/PNG nằm trong `assests/img/`.
 
-## Cau truc du an
+## Cấu trúc dự án
 ```text
 Positivus_Web
 |-- assests/
@@ -33,15 +33,7 @@ Positivus_Web
     |-- java.js
 ```
 
-## Cach chay
-1. Clone hoac tai ma nguon ve may.
-2. Mo `src/index.html` bang trinh duyet hoac phuc vu thu muc `src` qua mot static server (vi du `npx serve src`).
-3. Dam bao duong dan tuong doi toi thu muc `assests/` giu nguyen khi deploy.
-
-## Tuy chinh nhanh
-- **Noi dung**: chinh sua trong `src/index.html` cho tung section (Services, Case Studies, Team, Testimonials, Contact...).
-- **Phong cach**: cap nhat mau sac, typography, layout trong `assests/styles.css` va cac bien/reset o `assests/base.css`.
-- **Tuong tac**: mo rong logic trong `src/java.js` (can chinh toc do marquee, them auto-play cho testimonials, thay doi cach tinh slider...).
-
-## Dong gop
-Day la du an front-end tinh. Ban co the fork va tao pull request; dung quen kiem tra tren nhieu kich thuoc man hinh va lint lai HTML/CSS truoc khi gui PR.
+## Tùy chỉnh nhanh
+- **Nội dung**: chỉnh sửa trong `src/index.html` cho từng section (Services, Case Studies, Team, Testimonials, Contact...).
+- **Phong cách**: cập nhật màu sắc, typography, layout trong `assests/styles.css` và các biến/reset ở `assests/base.css`.
+- **Tương tác**: mở rộng logic trong `src/java.js` (canh chỉnh tốc độ marquee, thêm auto-play cho testimonials, thay đổi cách tính slider...).
